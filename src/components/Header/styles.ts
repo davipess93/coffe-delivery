@@ -4,6 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 2rem 0;
 
   nav {
     display: flex;
@@ -14,7 +15,7 @@ export const HeaderContainer = styled.header`
       align-items: center;
       gap: 0.25rem;
 
-      padding: 0.5rem;
+      padding: 0.5rem calc(0.5rem + 3px) 0.5rem 0.5rem;
       border-radius: 8px;
 
       background: ${(props) => props.theme.lightPurple};

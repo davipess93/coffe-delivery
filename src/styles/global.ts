@@ -7,13 +7,21 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body, input, textarea, button {
-    font-family: 'Roboto', sans-serif;
+  :root {
     background: ${(props) => props.theme.background};
+  }
+
+  body, input, textarea, button, p {
+    font-family: 'Roboto', sans-serif;
     color: ${(props) => props.theme.text};
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Baloo 2', cursive;
   }
+
+  h1 {
+    color: ${(props) => props.theme.title}
+  }
+
 `
