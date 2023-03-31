@@ -26,13 +26,13 @@ export function Home() {
           <HeroList>
             <div>
               <span>
-                <IconContainer>
+                <IconContainer backgroundColor="cart">
                   <ShoppingCart size={16} weight="fill" />
                 </IconContainer>
                 Compras simples e segura
               </span>
               <span>
-                <IconContainer>
+                <IconContainer backgroundColor="package">
                   <Package size={16} weight="fill" />
                 </IconContainer>
                 Embalagem mantém o café intacto
@@ -40,13 +40,13 @@ export function Home() {
             </div>
             <div>
               <span>
-                <IconContainer>
+                <IconContainer backgroundColor="timer">
                   <Timer size={16} weight="fill" />
                 </IconContainer>
                 Entrega rápida e rastreada
               </span>
               <span>
-                <IconContainer>
+                <IconContainer backgroundColor="coffee">
                   <Coffee size={16} weight="fill" />
                 </IconContainer>
                 O café chega fresquinho até você

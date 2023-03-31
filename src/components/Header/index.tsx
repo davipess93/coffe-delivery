@@ -7,7 +7,9 @@ import { HeaderContainer } from './styles'
 export function Header() {
   return (
     <HeaderContainer>
-      <img src={logo} alt="" />
+      <NavLink to="/" title="Home">
+        <img src={logo} alt="" />
+      </NavLink>
 
       <nav>
         <span>
@@ -15,7 +17,7 @@ export function Header() {
           Teresina, PI
         </span>
 
-        <NavLink to="cart" title="Carrinho">
+        <NavLink to="/checkout" title="Carrinho">
           <ShoppingCart size={22} weight="fill" />
         </NavLink>
       </nav>
