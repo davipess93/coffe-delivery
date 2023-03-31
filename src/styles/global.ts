@@ -1,6 +1,14 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
+  html {
+    overflow: -moz-scrollbars-none;
+  }
+  
+  html::-webkit-scrollbar { 
+    display: none;
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -9,6 +17,10 @@ export const GlobalStyle = createGlobalStyle`
 
   :root {
     background: ${(props) => props.theme.background};
+  }
+
+  --webkit-scrollbar {
+    display: none;
   }
 
   body, input, textarea, button, p {

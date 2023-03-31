@@ -1,4 +1,13 @@
-import { Coffee, Package, ShoppingCart, Timer } from 'phosphor-react'
+import {
+  Coffee,
+  Minus,
+  Package,
+  Plus,
+  ShoppingCart,
+  Timer,
+} from 'phosphor-react'
+
+import coffee from '../../assets/products/coffee.png'
 
 import {
   HeroGrid,
@@ -7,6 +16,18 @@ import {
   HeroList,
   HomeContainer,
   IconContainer,
+  CoffeListContainer,
+  CoffeList,
+  CoffeCard,
+  CoffeCardLabel,
+  CoffeCardImg,
+  CoffeCardTitle,
+  CoffeCardDescription,
+  CoffeeCardFooter,
+  CoffeCardPriceValue,
+  ButtonGroup,
+  IncrementButton,
+  CartButton,
 } from './styles'
 import hero from '../../assets/hero.png'
 
@@ -59,6 +80,41 @@ export function Home() {
           <img src={hero} alt="" />
         </div>
       </HeroContainer>
+
+      <CoffeListContainer>
+        <h1>Nossos cafés</h1>
+
+        <CoffeList>
+          <CoffeCard>
+            <CoffeCardImg src={coffee} alt="" />
+            <CoffeCardLabel>TRADITIONAL</CoffeCardLabel>
+            <CoffeCardTitle>Expresso Tradicional</CoffeCardTitle>
+            <CoffeCardDescription>
+              O tradicional café feito com água quente e grãos moídos
+            </CoffeCardDescription>
+
+            <CoffeeCardFooter>
+              <span>
+                R$ <CoffeCardPriceValue>9,90</CoffeCardPriceValue>
+              </span>
+              <ButtonGroup>
+                <IncrementButton>
+                  <button>
+                    <Minus size={14} weight="bold" />
+                  </button>
+                  <span>1</span>
+                  <button>
+                    <Plus size={14} weight="bold" />
+                  </button>
+                </IncrementButton>
+                <CartButton>
+                  <ShoppingCart size={22} weight="fill" />
+                </CartButton>
+              </ButtonGroup>
+            </CoffeeCardFooter>
+          </CoffeCard>
+        </CoffeList>
+      </CoffeListContainer>
     </HomeContainer>
   )
 }
