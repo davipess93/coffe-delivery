@@ -1,7 +1,17 @@
 import styled from 'styled-components'
 
+import heroBackground from '../../assets/hero-background.png'
+
 export const HomeContainer = styled.main`
   padding: 4rem 0;
+
+  background: url(${heroBackground});
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+
+  // Hack para esticar o background
+  margin: 0 calc((0px - 100vw + 1130px) / 2);
+  padding: 0 calc((100vw - 1130px) / 2);
 `
 
 export const HeroContainer = styled.div`

@@ -27,7 +27,6 @@ export function Home() {
           </HeroInfos>
 
           <HeroList>
-            {/* <div> */}
             <div>
               <IconContainer backgroundColor="cart">
                 <ShoppingCart size={16} weight="fill" />
@@ -40,8 +39,6 @@ export function Home() {
               </IconContainer>
               Embalagem mantém o café intacto
             </div>
-            {/* </div> */}
-            {/* <div> */}
             <div>
               <IconContainer backgroundColor="timer">
                 <Timer size={16} weight="fill" />
@@ -54,7 +51,6 @@ export function Home() {
               </IconContainer>
               O café chega fresquinho até você
             </div>
-            {/* </div> */}
           </HeroList>
         </HeroGrid>
 
