@@ -4,21 +4,20 @@ import heroBackground from '../../assets/hero-background.png'
 
 export const HomeContainer = styled.main`
   padding: 4rem 0;
-
-  background: url(${heroBackground});
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-
-  // Hack para esticar o background
-  margin: 0 calc((0px - 100vw + 1130px) / 2);
-  padding: 0 calc((100vw - 1130px) / 2);
 `
 
 export const HeroContainer = styled.div`
   display: flex;
   gap: 1rem;
 
-  margin-bottom: 6rem;
+  background: url(${heroBackground});
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+
+  // Hack para esticar o background
+  margin: 0 calc((0px - 100vw + 1130px) / 2) 6rem;
+  padding: 0 calc((100vw - 1130px) / 2);
 `
 
 export const HeroGrid = styled.div`
