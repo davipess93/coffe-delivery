@@ -32,23 +32,19 @@ export const HeroInfos = styled.div`
 `
 
 export const HeroList = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
 
   div {
     display: flex;
+    align-items: center;
 
-    span {
-      display: flex;
-      align-items: center;
+    gap: 1rem;
 
-      flex: 1;
-      gap: 1rem;
-
-      svg {
-        color: ${(props) => props.theme.white};
-      }
+    svg {
+      color: ${(props) => props.theme.white};
     }
   }
 `

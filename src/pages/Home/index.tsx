@@ -27,34 +27,34 @@ export function Home() {
           </HeroInfos>
 
           <HeroList>
+            {/* <div> */}
             <div>
-              <span>
-                <IconContainer backgroundColor="cart">
-                  <ShoppingCart size={16} weight="fill" />
-                </IconContainer>
-                Compras simples e segura
-              </span>
-              <span>
-                <IconContainer backgroundColor="package">
-                  <Package size={16} weight="fill" />
-                </IconContainer>
-                Embalagem mantém o café intacto
-              </span>
+              <IconContainer backgroundColor="cart">
+                <ShoppingCart size={16} weight="fill" />
+              </IconContainer>
+              Compras simples e segura
             </div>
             <div>
-              <span>
-                <IconContainer backgroundColor="timer">
-                  <Timer size={16} weight="fill" />
-                </IconContainer>
-                Entrega rápida e rastreada
-              </span>
-              <span>
-                <IconContainer backgroundColor="coffee">
-                  <Coffee size={16} weight="fill" />
-                </IconContainer>
-                O café chega fresquinho até você
-              </span>
+              <IconContainer backgroundColor="package">
+                <Package size={16} weight="fill" />
+              </IconContainer>
+              Embalagem mantém o café intacto
             </div>
+            {/* </div> */}
+            {/* <div> */}
+            <div>
+              <IconContainer backgroundColor="timer">
+                <Timer size={16} weight="fill" />
+              </IconContainer>
+              Entrega rápida e rastreada
+            </div>
+            <div>
+              <IconContainer backgroundColor="coffee">
+                <Coffee size={16} weight="fill" />
+              </IconContainer>
+              O café chega fresquinho até você
+            </div>
+            {/* </div> */}
           </HeroList>
         </HeroGrid>
 
@@ -67,6 +67,12 @@ export function Home() {
         <h1>Nossos cafés</h1>
 
         <CoffeList>
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
           <CoffeeCard />
         </CoffeList>
       </CoffeListContainer>

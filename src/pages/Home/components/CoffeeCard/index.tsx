@@ -10,7 +10,7 @@ import {
   CoffeCardTitle,
   CoffeeCardFooter,
   IncrementButton,
-} from './sytles'
+} from './styles'
 
 import traditionalCoffe from '../../../../assets/products/coffee.png'
 
