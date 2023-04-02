@@ -24,6 +24,11 @@ export const CoffeCardImg = styled.img`
   margin: auto;
 `
 
+export const CoffeeCardLabelGroup = styled.div`
+  display: flex;
+  gap: 0.25rem;
+`
+
 export const CoffeCardLabel = styled.span`
   margin-top: 80px;
   font-size: 10px;
@@ -73,7 +78,6 @@ export const IncrementButton = styled.div`
   border-radius: 6px;
 
   background: ${(props) => props.theme.button};
-  /* padding: 0.25rem 0.5rem; */
 
   span {
     color: ${(props) => props.theme.title};

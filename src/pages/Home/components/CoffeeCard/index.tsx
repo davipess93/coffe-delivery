@@ -9,24 +9,38 @@ import {
   CoffeCardPriceValue,
   CoffeCardTitle,
   CoffeeCardFooter,
+  CoffeeCardLabelGroup,
   IncrementButton,
 } from './styles'
 
-import traditionalCoffe from '../../../../assets/products/coffee.png'
+// import expresso from '../../../../assets/products/expresso.png'
+import { CoffeeProps } from '../..'
 
-export function CoffeeCard() {
+export function CoffeeCard({
+  description,
+  id,
+  imageName,
+  methods,
+  name,
+  price,
+}: CoffeeProps) {
   return (
     <CoffeCardContainer>
-      <CoffeCardImg src={traditionalCoffe} alt="" />
-      <CoffeCardLabel>TRADITIONAL</CoffeCardLabel>
-      <CoffeCardTitle>Expresso Tradicional</CoffeCardTitle>
-      <CoffeCardDescription>
-        O tradicional café feito com água quente e grãos moídos
-      </CoffeCardDescription>
+      <CoffeCardImg src={`/src/assets/products/${imageName}`} alt="" />
+      <CoffeeCardLabelGroup>
+        {methods.map((method, index) => (
+          <CoffeCardLabel key={index}>{method}</CoffeCardLabel>
+        ))}
+      </CoffeeCardLabelGroup>
+      <CoffeCardTitle>{name}</CoffeCardTitle>
+      <CoffeCardDescription>{description}</CoffeCardDescription>
 
       <CoffeeCardFooter>
         <span>
-          R$ <CoffeCardPriceValue>9,90</CoffeCardPriceValue>
+          R${' '}
+          <CoffeCardPriceValue>
+            {price.toLocaleString('pt-br', { minimumFractionDigits: 2 })}
+          </CoffeCardPriceValue>
         </span>
         <ButtonGroup>
           <IncrementButton>
