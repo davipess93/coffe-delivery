@@ -1,3 +1,14 @@
+import { CheckoutContainer, CheckoutTitle } from './styles'
+
 export function Checkout() {
-  return <h1>Checkout</h1>
+  return (
+    <CheckoutContainer>
+      <div>
+        <CheckoutTitle>Complete seu pedido</CheckoutTitle>
+      </div>
+      <div>
+        <CheckoutTitle>Cafés selecionados</CheckoutTitle>
+      </div>
+    </CheckoutContainer>
+  )
 }
