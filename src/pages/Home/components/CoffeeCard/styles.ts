@@ -4,6 +4,7 @@ export const CoffeCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 0.5rem;
 
   padding: 1.5rem;
