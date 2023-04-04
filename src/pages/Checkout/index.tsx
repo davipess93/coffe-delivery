@@ -1,6 +1,7 @@
 import { MapPinLine } from 'phosphor-react'
 import {
   CheckoutContainer,
+  CheckoutForm,
   CheckoutFormContainer,
   CheckoutFormHeader,
   CheckoutFormSubtitle,
@@ -23,6 +24,20 @@ export function Checkout() {
               </CheckoutFormSubtitle>
             </div>
           </CheckoutFormHeader>
+          <CheckoutForm>
+            <input type="text" placeholder="CEP" className="cep" />
+            <input type="text" placeholder="Rua" className="street" />
+            <input type="text" placeholder="Número" />
+            <input
+              type="text"
+              placeholder="Complemento"
+              className="complement"
+            />
+
+            <input type="text" placeholder="Bairro" />
+            <input type="text" placeholder="Cidade" />
+            <input type="text" placeholder="UF" />
+          </CheckoutForm>
         </CheckoutFormContainer>
       </div>
       <div>
