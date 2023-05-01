@@ -21,10 +21,7 @@ export const CheckoutFormContainer = styled.div`
 export const CheckoutFormHeader = styled.div`
   display: flex;
   gap: 8px;
-
-  svg {
-    color: ${(props) => props.theme.darkYellow};
-  }
+  margin-bottom: 2rem;
 `
 
 export const CheckoutFormTitle = styled.p`
@@ -42,7 +39,6 @@ export const CheckoutFormSubtitle = styled.p`
 `
 
 export const CheckoutForm = styled.form`
-  margin-top: 2rem;
   width: 100%;
   display: grid;
   grid-template-columns: 12.5rem 17.25rem 3.75rem;
@@ -88,3 +84,26 @@ export const CheckoutFormInputGroupThree = styled.div`
   grid-template-columns: 3fr 4fr 1fr;
 `
 export const CheckoutFormInput = styled.input``
+
+export const ButtonToggleContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+`
+
+export const ButtonToggle = styled.button`
+  padding: 16px;
+  border: none;
+  background: ${(props) => props.theme.button};
+  color: ${(props) => props.theme.text};
+  font-size: 12px;
+  border-radius: 6px;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &:hover {
+    background: ${(props) => props.theme.hover};
+  }
+`
